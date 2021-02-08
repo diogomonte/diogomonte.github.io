@@ -9,7 +9,7 @@ in different domains and technologies while enjoying the process of traveling an
 
 I have built my career in a variety of industries in different countries, working in big and small internation teams.
 
-I enjoy collaborating with development, architecting, creativity and sharing knowledge with others. 
+I enjoy collaborating with development & architecting using creativity and sharing knowledge with others. 
 
 - I am a test-driver developer. I strongly believe writing unit tests helps on future refactoring.
 - I care about coverage and code review. It helps to keep the code quality and spread knowledge between the team members.
