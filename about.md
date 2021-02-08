@@ -1,17 +1,17 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
-[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
+I am passionated about technology and software development. Since 2009 I have been working
+in different domains and technologies while enjoying the process of traveling and discovering the world.
 
-You can **download** the theme here:
-[https://github.com/dirkfabisch/mediator](https://github.com/dirkfabisch/mediator) 
+I have built my career in a variety of industries in different countries, working in big and small internation teams.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I enjoy collaborating with development, architecting, creativity and sharing knowledge with others. 
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+- I am a test-driver developer. I strongly believe writing unit tests helps on future refactoring.
+- I care about coverage and code review. It helps to keep the code quality and spread knowledge between the team members.
+- I like to be notified quickly when I break things. So I refer to continuous integration on this matter.
+- I like to work on teams that have good connection and inspire each other to grow together.
