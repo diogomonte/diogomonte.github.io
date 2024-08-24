@@ -4,14 +4,16 @@ title: About me
 permalink: /about/
 ---
 
-I am passionated about technology and software development. Since 2009 I have been working
-in different domains and technologies while enjoying the process of traveling and discovering the world.
+I’m a Software Engineer with a career that began in 2009, and I’ve developed applications across various domains including media, sports, logistics, and IoT. My technical expertise spans several programming languages and platforms such as Go, Java, and Kotlin.
 
-I have built my career in a variety of industries in different countries, working in big and small internation teams.
+I am committed to writing clean, readable, and testable code. My passion for knowledge sharing drives me to conduct thorough code reviews and advocate for best practices, especially in test-driven development (TDD). I firmly believe that writing unit tests not only ensures better code design but also supports future refactoring. By practicing TDD, I keep changes small and manageable, which enhances both code quality and team comprehension.
 
-I enjoy collaborating with development & architecting using creativity and sharing knowledge with others. 
+I prioritize high code coverage and effective code reviews, as these practices help maintain code quality and foster knowledge sharing within the team. Recognizing that readability can be subjective, I continually ask myself:
 
-- I am a test-driver developer. I strongly believe writing unit tests helps on future refactoring.
-- I care about coverage and code review. It helps to keep the code quality and spread knowledge between the team members.
-- I like to be notified quickly when I break things. So I refer to continuous integration on this matter.
-- I like to work on teams that have good connection and inspire each other to grow together.
+Is my code easy to maintain?
+Is my code easy to change?
+Is my code easy to read?
+Is my code expressive enough?
+I value quick feedback on issues, which is why I rely on continuous integration tools. I thrive in teams with strong connections where members inspire and support each other’s growth.
+
+
