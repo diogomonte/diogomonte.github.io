@@ -29,7 +29,9 @@ predicted—not because everyone is working like a robot, but because there are 
 where the quality bar is set, and everyone is on the same page, while still having plenty of room for learning 
 and creativity.
 
-There is a difference between individuals working as a team and a team thriving and moving forward together.
+There is a difference between individuals working as a team and a team thriving and moving forward together. For this 
+reason, I strongly believe in standardized ways of working. I refer to standardization as a set of rules, practices, 
+processes, and coding conventions that all team members should follow. 
 
 ## The Benefits of Standardization
 
