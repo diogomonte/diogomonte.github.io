@@ -41,6 +41,9 @@ the code becomes easier to understand regardless of who wrote it.
 
 #### 2. Faster Onboarding
 New team members can get up to speed more quickly when there are established guidelines documenting practices and processes.
+Furthermore, a consistent approach enables team members to work across different services and explore various team structures, 
+allowing the team to adapt to new domains much more quickly than if the codebase is vastly different from what they are 
+accustomed to.
 
 #### 3. Improve Code Quality
 Standard practices can cover a range of topics such as design patterns, testing strategies, naming conventions, 
