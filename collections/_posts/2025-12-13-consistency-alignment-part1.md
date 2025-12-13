@@ -24,19 +24,14 @@ For this reason, I strongly believe in consistency and team alignment. When team
 
 There is a difference between individuals working as a team and a team thriving together. By consistency and alignment, I mean a set of practices, processes, coding conventions, and communication habits that all team members follow.
 
-How to Foster Consistency and Team Alignment
+#### How to Foster Consistency and Team Alignment?
 
-Define coding conventions (naming, formatting, design patterns, error handling).
-
-Agree on testing strategies (TDD, unit tests, integration tests).
-
-Establish clear documentation practices (README, architecture diagrams, onboarding guides).
-
-Conduct design discussions before implementing new features.
-
-Set up code review guidelines to ensure consistent quality.
-
-Schedule regular knowledge-sharing sessions within the team.
+1. Define coding conventions (naming, formatting, design patterns, error handling).
+2. Agree on testing strategies (TDD, unit tests, integration tests).
+3. Establish clear documentation practices (README, architecture diagrams, onboarding guides).
+4. Conduct design discussions before implementing new features.
+5. Set up code review guidelines to ensure consistent quality.
+6. Schedule regular knowledge-sharing sessions within the team.
 
 #### The Benefits of Consistency and Team Alignment
 
