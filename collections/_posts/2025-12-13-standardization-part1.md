@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Standardization in Software Teams: Making Code Predictable and Maintainable - Part 1"
-date:       2024-06-10
+date:       2025-12-13
 summary:    This post explores the advantages of adopting standardized and strong structures practices in a software development team, highlighting how they contribute to consistency, efficiency, and improved code quality.
 categories: teamwork process waysofworking
 ---
