@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Consistency and Team Alignment in Software Teams: Making Code Predictable and Maintainable - Part 1
+title: "Consistency and Team Alignment in Software Teams: Making Code Predictable and Maintainable - Part 1"
 date: 2024-06-10
 summary: This post explores the advantages of adopting consistent practices and promoting team alignment in a software development team, highlighting how they contribute to efficiency, collaboration, and improved code quality.
 categories: teamwork process waysofworking
