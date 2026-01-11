@@ -14,11 +14,11 @@ If you’re lucky, a teammate has all the configurations handy. If not, you may 
 
 Once you finally have the applications running, it’s time to write code. Each file looks different, the code looks different, and there are no consistent patterns. It’s clear that different engineers have applied their own interpretation of “clean code.” Every file you browse presents a new behavior or approach. Mutations are scattered across different functions, making it difficult to understand or predict outcomes. This is a nightmare for any developer.
 
-Most of the time, team members define this as “legacy code,” even when it was written by the same team just five years ago. We can’t fix and rewrite software every few years—it costs too much. But how can we spread good practices across the team? How can we reach a consensus on code design and make development less painful?
+This is often labeled as “legacy code,” even when it was written by the same team only a few years ago. We can’t fix and rewrite software every few years—it costs too much. But how can we spread good practices across the team? How can we reach a consensus on code design and make development less painful?
 
 Practices like TDD and DDD can help maintain well-designed, understandable code and improve team communication. But questions remain: What if my understanding of TDD is different from yours? What if a “good test” means something completely different to another engineer? How can we ensure the team is aligned?
 
-I recently joined a large organization where these challenges were evident. Team members developed features within a large codebase without alignment, each working independently. When asking questions, someone might respond, “I think he knows, as he implemented this feature.” My immediate thought is, “Did any design discussion happen before this feature was implemented?”
+I recently joined a large organization where these challenges were evident. Team members developed features within a large codebase without alignment, each working independently. When asking questions, someone might respond, “I think he knows, as he implemented this feature.” My immediate thought is, “Did any design discussion happen before this feature was implemented?”. Most of the engineers demonstrated expertise in completing tasks, and once a task was finished, they appeared ready to move on to the next one. It was clear that refactoring was not practiced. I also felt there was limited engagement with the domain itself; they learned only what the application was supposed to do, leaving the underlying principles aside.
 
 For this reason, I strongly believe in consistency and team alignment. When teams are aligned and follow consistent practices, the output becomes predictable while still encouraging creativity. Everyone understands the quality bar and can collaborate effectively.
 
@@ -26,16 +26,17 @@ There is a difference between individuals working as a team and a team thriving 
 
 #### How to Foster Consistency and Team Alignment?
 
-1. Define coding conventions (naming, formatting, design patterns, error handling).
-2. Agree on testing strategies (TDD, unit tests, integration tests).
-3. Establish clear documentation practices (README, architecture diagrams, onboarding guides).
-4. Conduct design discussions before implementing new features.
-5. Set up code review guidelines to ensure consistent quality.
-6. Schedule regular knowledge-sharing sessions within the team.
+1. Make the problem visible by using tools such as SonarQube.
+2. Define coding conventions (naming, formatting, design patterns, error handling).
+3. Agree on testing strategies (TDD, unit tests, integration tests).
+4. Establish clear documentation practices (README, architecture diagrams, onboarding guides).
+5. Conduct design discussions before implementing new features.
+6. Set up code review guidelines to ensure consistent quality.
+7. Schedule regular knowledge-sharing sessions within the team.
 
 #### The Benefits of Consistency and Team Alignment
 
-1. Consistency
+1. Predictability
 Teams following consistent practices produce code that is easier to understand and maintain, regardless of who wrote it.
 
 2. Faster Onboarding
@@ -61,3 +62,5 @@ When teams follow agreed-upon practices and align on expectations, they are less
 Consistency and team alignment offer many benefits, especially for new members. The key factors are building habits and maintaining agreement across processes, practices, and coding standards. Flexibility is important, but aligning the team while following consistent practices enhances overall effectiveness and efficiency.
 
 Giving team members time to understand the advantages of consistent practices while involving them in the process is essential. Encouraging creativity, inviting ideas, and fostering ownership will help teams thrive while maintaining high-quality software.
+
+In the next parts, I’ll walk through how we applied each of these steps in my current organization and the impact they had on alignment and code quality.
