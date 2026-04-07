@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAgro — Farm Finance Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">Diogo<span>.</span></a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#portfolio" class="active">Portfolio</a></li>
+          <li><a href="../index.html#articles">Articles</a></li>
+          <li><a href="../index.html#policies">Policies</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html#portfolio">← Portfolio</a></p>
+      <h1>IAgro</h1>
+      <p>Farm finance manager for Android — offline, simple, and built for the field.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="prose-container">
+      <div class="prose-meta">
+        <div class="tags">
+          <span class="tag">Android</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Compose</span>
+        </div>
+      </div>
+      <article class="prose">
+
+        <h2>What is IAgro?</h2>
+        <p>
+          IAgro is a lightweight farm finance manager built for Android. It lets farmers and rural producers track their financial activity — from animal pricing and livestock-related costs to general farm expenses — all from a single local app.
+        </p>
+        <p>
+          The app was designed to be as simple and practical as possible. No internet connection. No account creation. No complexity. Just open the app, enter your data, and track what matters.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+          <li>Track income and expenses related to farm activities</li>
+          <li>Manage pricing for animals and livestock</li>
+          <li>Record general agricultural costs and revenues</li>
+          <li>View a clear summary of your farm finances</li>
+          <li>Fully offline — works anywhere, even without signal</li>
+        </ul>
+
+        <h2>Privacy</h2>
+        <p>
+          IAgro stores all data locally on your device. There is no data collection, no analytics, and no internet access. Your financial information never leaves your phone.
+        </p>
+        <p>
+          <a href="../policies/iagro-privacy.html">Read the full Privacy Policy →</a>
+        </p>
+
+        <h2>Built With</h2>
+        <ul>
+          <li><strong>Kotlin</strong> — primary language</li>
+          <li><strong>Jetpack Compose</strong> — modern declarative UI</li>
+          <li><strong>Room</strong> — local database for on-device storage</li>
+        </ul>
+
+        <hr />
+        <p><a href="../index.html#portfolio">← Back to Portfolio</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Diogo Monte.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
