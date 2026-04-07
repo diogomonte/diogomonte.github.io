@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="After years of writing UIKit, switching to SwiftUI felt like going from assembly to Python." />
+  <title>Why SwiftUI Changed How I Think About UI Code — Diogo Monte</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">Diogo<span>.</span></a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#articles" class="active">Articles</a></li>
+          <li><a href="../index.html#policies">Policies</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Subpage hero -->
+  <div class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html#articles">← Articles</a></p>
+      <h1>Why SwiftUI Changed How I Think About UI Code</h1>
+      <p>The shift from imperative to declarative UI — and why it matters.</p>
+    </div>
+  </div>
+
+  <!-- Article content -->
+  <main>
+    <div class="prose-container">
+
+      <div class="prose-meta">
+        <div class="tags">
+          <span class="tag">iOS</span>
+          <span class="tag">SwiftUI</span>
+        </div>
+        <span class="date">March 2025 · 6 min read</span>
+      </div>
+
+      <article class="prose">
+
+        <p>
+          I spent four years writing UIKit before I wrote a single SwiftUI view. By that point I had
+          formed strong opinions about how UI code should be structured — and SwiftUI challenged almost
+          all of them.
+        </p>
+
+        <h2>The problem with imperative UI</h2>
+        <p>
+          In UIKit, you describe <em>how</em> your UI changes rather than <em>what</em> it looks like.
+          You call <code>tableView.reloadRows(at:with:)</code>. You manually update a label after
+          a network response. You write <code>viewWillAppear</code> to set up state that should've been
+          set when the view was created.
+        </p>
+        <p>
+          The result is UI state spread across dozens of lifecycle methods, delegate callbacks, and
+          notification observers — all held together by convention and discipline.
+        </p>
+
+        <blockquote>
+          "UIKit apps feel like managing a spreadsheet cell-by-cell. SwiftUI feels like writing a formula."
+        </blockquote>
+
+        <h2>SwiftUI's model: declare, don't command</h2>
+        <p>
+          SwiftUI flips the script. Instead of telling the framework what to change, you describe
+          what the UI should look like for any given state. The framework figures out the diff.
+        </p>
+
+        <pre><code>struct ProfileView: View {
+  @State private var isFollowing = false
+
+  var body: some View {
+    Button(isFollowing ? "Unfollow" : "Follow") {
+      isFollowing.toggle()
+    }
+    .buttonStyle(.borderedProminent)
+    .tint(isFollowing ? .gray : .blue)
+  }
+}</code></pre>
+
+        <p>
+          There's no explicit "update the button label" call. The view is a pure function of its state.
+          When <code>isFollowing</code> changes, SwiftUI re-evaluates the body and updates the tree.
+        </p>
+
+        <h2>What took the longest to unlearn</h2>
+        <p>
+          The hardest habit to break was reaching for <code>@State</code> everywhere. Coming from UIKit,
+          it feels natural to store everything locally. But SwiftUI rewards pushing state up and
+          passing it down — the same thinking that makes React components composable.
+        </p>
+        <p>
+          Once I started thinking of views as functions rather than objects, the code got dramatically
+          simpler. Smaller views, clearer responsibilities, and far fewer bugs from stale state.
+        </p>
+
+        <h2>The verdict after six months</h2>
+        <p>
+          SwiftUI isn't perfect — the lack of UIKit's fine-grained control still hurts in complex
+          table views, and <code>List</code> performance can be frustrating. But for the 90% case,
+          it lets me build better UIs faster with less code. I'm not going back.
+        </p>
+
+        <hr />
+
+        <p>
+          <a href="../index.html#articles">← Back to all articles</a>
+        </p>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Diogo Monte.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

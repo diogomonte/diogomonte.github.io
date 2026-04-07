@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Diogo Monte — iOS & Android developer building apps people love." />
+  <title>Diogo Monte — Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+       ============================================= -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <!-- Logo / name -->
+        <a href="#home" class="nav-logo">Diogo<span>.</span></a>
+
+        <!-- Desktop links -->
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#home"      class="active">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#articles"> Articles</a></li>
+          <li><a href="#policies"> Policies</a></li>
+          <li><a href="#about">    About</a></li>
+        </ul>
+
+        <!-- Hamburger button (mobile) -->
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         HERO SECTION
+         ============================================= -->
+    <section id="home" class="hero">
+      <div class="container">
+
+        <div class="hero-text">
+          <span class="hero-badge">👋 Open to new projects</span>
+          <h1>Hi, I'm <em>Diogo Monte</em></h1>
+          <p>
+            I build apps and tools that make everyday life a little easier.
+            Full-stack developer with a love for clean interfaces and solid code.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            <a href="#about"     class="btn btn-outline">About Me</a>
+          </div>
+        </div>
+
+        <!-- Profile picture -->
+        <div class="hero-image" aria-hidden="true">
+          <img src="images/eu.jpeg" alt="Diogo Monte" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         PORTFOLIO SECTION  (most important)
+         ============================================= -->
+    <section id="portfolio">
+      <div class="container">
+        <p class="section-label">What I've built</p>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-subtitle">
+          A selection of apps and projects I've shipped. Tap a card to learn more.
+        </p>
+
+        <div class="portfolio-grid">
+
+          <!-- Project card 1 -->
+          <article class="card project-card">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">iOS</span>
+                <span class="tag">Swift</span>
+                <span class="tag">SwiftUI</span>
+              </div>
+              <h3>FocusFlow</h3>
+              <p class="description">
+                A minimalist productivity timer that helps you stay in the zone with
+                customizable Pomodoro sessions, focus sounds, and streak tracking.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm">View App</a>
+              <a href="portfolio/focusflow.html" class="btn btn-ghost btn-sm">Details</a>
+            </div>
+          </article>
+
+          <!-- Project card 2 -->
+          <article class="card project-card">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">Android</span>
+                <span class="tag">Kotlin</span>
+                <span class="tag">Compose</span>
+              </div>
+              <h3>WalletLite</h3>
+              <p class="description">
+                A lightweight personal finance tracker for Android. Log expenses,
+                set budgets, and visualise spending with beautiful charts — no cloud, no account needed.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm">View App</a>
+              <a href="portfolio/walletlite.html" class="btn btn-ghost btn-sm">Details</a>
+            </div>
+          </article>
+
+          <!-- Project card 3 -->
+          <article class="card project-card">
+            <div class="card-body">
+              <div class="tags">
+                <span class="tag">Web</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <h3>DevBoard</h3>
+              <p class="description">
+                An open-source developer dashboard that aggregates GitHub activity,
+                open PRs, and CI status into a single glanceable view.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary btn-sm">View App</a>
+              <a href="portfolio/devboard.html" class="btn btn-ghost btn-sm">Details</a>
+            </div>
+          </article>
+
+        </div><!-- /.portfolio-grid -->
+      </div>
+    </section>
+
+    <!-- =============================================
+         ARTICLES SECTION
+         ============================================= -->
+    <section id="articles">
+      <div class="container">
+        <p class="section-label">Writing</p>
+        <h2 class="section-title">Articles</h2>
+        <p class="section-subtitle">
+          Thoughts on mobile development, product design, and the things I learn along the way.
+        </p>
+
+        <div class="articles-grid">
+
+          <!-- Article card 1 -->
+          <article class="card article-card">
+            <a href="articles/why-swiftui-changed-everything.html" class="card-link">
+              <div class="card-body">
+                <div class="card-meta">
+                  <div class="tags">
+                    <span class="tag">iOS</span>
+                    <span class="tag">SwiftUI</span>
+                  </div>
+                  <span class="date">Mar 2025</span>
+                </div>
+                <h3>Why SwiftUI Changed How I Think About UI Code</h3>
+                <p class="excerpt">
+                  After years of writing UIKit, switching to SwiftUI felt like going from assembly
+                  to Python. Here's what I learned in the first six months.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span class="read-more">Read article</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- Article card 2 -->
+          <article class="card article-card">
+            <a href="articles/offline-first-apps.html" class="card-link">
+              <div class="card-body">
+                <div class="card-meta">
+                  <div class="tags">
+                    <span class="tag">Architecture</span>
+                    <span class="tag">Android</span>
+                  </div>
+                  <span class="date">Jan 2025</span>
+                </div>
+                <h3>Building Offline-First Mobile Apps That Actually Work</h3>
+                <p class="excerpt">
+                  Sync conflicts, stale caches, and flaky networks — here's a practical guide to
+                  building apps that feel fast whether or not there's a signal.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span class="read-more">Read article</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- Article card 3 -->
+          <article class="card article-card">
+            <a href="articles/shipping-side-projects.html" class="card-link">
+              <div class="card-body">
+                <div class="card-meta">
+                  <div class="tags">
+                    <span class="tag">Indie Dev</span>
+                  </div>
+                  <span class="date">Nov 2024</span>
+                </div>
+                <h3>The System I Use to Actually Ship Side Projects</h3>
+                <p class="excerpt">
+                  I used to start dozens of projects and finish none. A few small changes to
+                  how I scope, schedule, and define "done" changed everything.
+                </p>
+              </div>
+              <div class="card-footer">
+                <span class="read-more">Read article</span>
+              </div>
+            </a>
+          </article>
+
+        </div><!-- /.articles-grid -->
+      </div>
+    </section>
+
+    <!-- =============================================
+         POLICIES SECTION
+         ============================================= -->
+    <section id="policies">
+      <div class="container">
+        <p class="section-label">Legal</p>
+        <h2 class="section-title">App Policies</h2>
+        <p class="section-subtitle">
+          Privacy policies and terms of service for all published apps.
+        </p>
+
+        <div class="policies-grid">
+
+          <!-- Policy card 1 -->
+          <article class="card policy-card">
+            <div class="card-body">
+              <div class="app-icon" role="img" aria-label="FocusFlow icon">⏱</div>
+              <h3>FocusFlow</h3>
+              <p class="app-desc">
+                Productivity timer for iOS with Pomodoro sessions and focus streaks.
+              </p>
+              <div class="policy-links">
+                <a href="policies/focusflow-privacy.html"  class="policy-link">Privacy Policy</a>
+                <a href="policies/focusflow-terms.html"    class="policy-link">Terms of Service</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Policy card 2 -->
+          <article class="card policy-card">
+            <div class="card-body">
+              <div class="app-icon" role="img" aria-label="WalletLite icon">💳</div>
+              <h3>WalletLite</h3>
+              <p class="app-desc">
+                Lightweight expense tracker for Android. No account required.
+              </p>
+              <div class="policy-links">
+                <a href="policies/walletlite-privacy.html" class="policy-link">Privacy Policy</a>
+                <a href="policies/walletlite-terms.html"   class="policy-link">Terms of Service</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.policies-grid -->
+      </div>
+    </section>
+
+    <!-- =============================================
+         ABOUT SECTION
+         ============================================= -->
+    <section id="about">
+      <div class="container">
+        <div class="about-inner">
+
+          <!-- Photo -->
+          <div class="about-photo">
+            <img src="images/eu.jpeg" alt="Diogo Monte smiling" />
+          </div>
+
+          <!-- Text -->
+          <div class="about-text">
+            <p class="section-label">A bit about me</p>
+            <h2 class="section-title">Hey, I'm Diogo 👋</h2>
+
+            <p>
+              I'm a software developer based in Portugal with a passion for building
+              mobile and web products that are both useful and delightful to use.
+            </p>
+            <p>
+              When I'm not shipping apps, I'm writing about what I learn, contributing
+              to open source, or enjoying a long hike somewhere with no wifi.
+            </p>
+            <p>
+              I care about clean code, honest product design, and shipping things that
+              actually work for real people.
+            </p>
+
+            <div class="skills" role="list" aria-label="Skills">
+              <span class="skill-badge" role="listitem">Swift / SwiftUI</span>
+              <span class="skill-badge" role="listitem">Kotlin / Compose</span>
+              <span class="skill-badge" role="listitem">React / TypeScript</span>
+              <span class="skill-badge" role="listitem">Node.js</span>
+              <span class="skill-badge" role="listitem">PostgreSQL</span>
+              <span class="skill-badge" role="listitem">Git</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">Diogo<span>.</span></a>
+          <p>Building apps people love.</p>
+        </div>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links" role="list">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#policies">Policies</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+
+        <div class="social-links" aria-label="Social links">
+          <!-- GitHub -->
+          <a href="https://github.com/diogomonte" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.3 3.47.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/diogomonte" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.57V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Diogo Monte. Built with HTML, CSS &amp; a bit of joy.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

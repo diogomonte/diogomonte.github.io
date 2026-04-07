@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The System I Use to Actually Ship Side Projects — Diogo Monte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">Diogo<span>.</span></a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#articles" class="active">Articles</a></li>
+          <li><a href="../index.html#policies">Policies</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html#articles">← Articles</a></p>
+      <h1>The System I Use to Actually Ship Side Projects</h1>
+      <p>How I stopped collecting unfinished repos and started shipping.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="prose-container">
+      <div class="prose-meta">
+        <div class="tags"><span class="tag">Indie Dev</span></div>
+        <span class="date">November 2024 · 5 min read</span>
+      </div>
+      <article class="prose">
+        <p>
+          My GitHub used to be a graveyard of half-built apps. A Pomodoro timer with no timer. An
+          expense tracker with no expenses. A recipe app with exactly one recipe (pasta).
+        </p>
+
+        <h2>Rule 1: Define "done" before you start</h2>
+        <p>
+          The most important thing I changed: I now write a one-paragraph definition of done
+          before writing a single line of code. Not "a full-featured timer app" but
+          "a timer that counts down 25 minutes and plays a sound when it hits zero."
+        </p>
+
+        <h2>Rule 2: Build the boring middle first</h2>
+        <p>
+          It's tempting to build the coolest features first — the animations, the onboarding flow,
+          the settings screen. Build the core user journey first, all the way through, even if it's
+          ugly. Polish is easy to add. Architecture is hard to change.
+        </p>
+
+        <h2>Rule 3: Ship an embarrassingly small v1</h2>
+        <p>
+          FocusFlow launched with one timer mode, no settings, and a light mode only. I was
+          embarrassed by it. It got 200 downloads in the first week and useful feedback I never
+          would have gotten from a feature spec.
+        </p>
+
+        <blockquote>
+          "If you're not embarrassed by your v1, you launched too late."
+        </blockquote>
+
+        <h2>Rule 4: Time-box ruthlessly</h2>
+        <p>
+          I give myself four weeks per side project. If it's not shippable in four weeks, the
+          scope was wrong, not the timeline. Cut features, don't extend the deadline.
+        </p>
+
+        <hr />
+        <p><a href="../index.html#articles">← Back to all articles</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Diogo Monte.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

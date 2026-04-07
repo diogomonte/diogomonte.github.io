@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building Offline-First Mobile Apps That Actually Work — Diogo Monte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">Diogo<span>.</span></a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#articles" class="active">Articles</a></li>
+          <li><a href="../index.html#policies">Policies</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html#articles">← Articles</a></p>
+      <h1>Building Offline-First Mobile Apps That Actually Work</h1>
+      <p>Sync conflicts, stale caches, and flaky networks — a practical guide.</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="prose-container">
+      <div class="prose-meta">
+        <div class="tags">
+          <span class="tag">Architecture</span>
+          <span class="tag">Android</span>
+        </div>
+        <span class="date">January 2025 · 8 min read</span>
+      </div>
+      <article class="prose">
+        <p>
+          "Works offline" is one of those features that sounds simple until you implement it.
+          Then you hit your first sync conflict at 2am and wonder why you ever left web dev.
+        </p>
+
+        <h2>The core principle: local is the source of truth</h2>
+        <p>
+          The most common mistake is treating the server as the source of truth and the local
+          database as a cache. Flip it. Writes go to local storage first, immediately reflecting
+          in the UI. Sync happens in the background.
+        </p>
+
+        <h2>Handling conflicts</h2>
+        <p>
+          Conflicts are inevitable when the same record is mutated on two devices while offline.
+          The simplest strategy is "last write wins" using a <code>updatedAt</code> timestamp.
+          For most apps, this is good enough.
+        </p>
+        <p>
+          For apps where data loss is unacceptable (note-taking, medical logs), use operational
+          transforms or CRDTs — but that's a rabbit hole for another article.
+        </p>
+
+        <h2>Sync queues</h2>
+        <p>
+          Don't retry individual failed requests. Build a persistent sync queue. Every mutation
+          is added to the queue; a background worker drains it when connectivity is available.
+          On Android, WorkManager is your friend.
+        </p>
+
+        <blockquote>
+          "A sync queue is a buffer between optimistic UI and eventual consistency."
+        </blockquote>
+
+        <h2>Telling the user what's happening</h2>
+        <p>
+          Don't hide sync status. A small badge showing "3 changes pending sync" is far better
+          than silent data loss. Users can handle "not synced yet" — they can't handle
+          "where did my data go?"
+        </p>
+
+        <hr />
+        <p><a href="../index.html#articles">← Back to all articles</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Diogo Monte.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

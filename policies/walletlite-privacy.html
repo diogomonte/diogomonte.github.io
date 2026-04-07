@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WalletLite — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">Diogo<span>.</span></a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#articles">Articles</a></li>
+          <li><a href="../index.html#policies" class="active">Policies</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html#policies">← App Policies</a></p>
+      <h1>WalletLite — Privacy Policy</h1>
+      <p>Last updated: April 2025</p>
+    </div>
+  </div>
+
+  <main>
+    <div class="prose-container">
+      <div class="prose-meta">
+        <div class="tags"><span class="tag">Android</span><span class="tag">Privacy</span></div>
+        <span class="date">Effective: April 1, 2025</span>
+      </div>
+      <article class="prose">
+        <p>
+          WalletLite is a fully offline expense tracker. This policy explains our minimal data practices.
+        </p>
+
+        <h2>1. Data Collection</h2>
+        <p>
+          WalletLite stores all data (transactions, categories, budgets) locally on your device using
+          Room database. No data is ever sent to external servers. We collect nothing.
+        </p>
+
+        <h2>2. Permissions</h2>
+        <ul>
+          <li><strong>Storage (optional):</strong> Required only if you export data to a CSV file on your device.</li>
+          <li><strong>Notifications (optional):</strong> For budget-limit alerts, generated locally.</li>
+        </ul>
+        <p>All permissions are optional and can be revoked at any time in Android Settings.</p>
+
+        <h2>3. No Third-Party SDKs</h2>
+        <p>
+          WalletLite contains no analytics, crash reporting, or advertising SDKs. Your financial data
+          stays on your device.
+        </p>
+
+        <h2>4. Data Deletion</h2>
+        <p>
+          Uninstalling the app removes all locally stored data. You can also clear all data from
+          within the app via Settings → Clear All Data.
+        </p>
+
+        <h2>5. Contact</h2>
+        <p><a href="mailto:hello@diogomonte.dev">hello@diogomonte.dev</a></p>
+
+        <hr />
+        <p><a href="../index.html#policies">← Back to App Policies</a></p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Diogo Monte.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
