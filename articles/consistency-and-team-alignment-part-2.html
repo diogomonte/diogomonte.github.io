@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A practical guide to implementing consistency and team alignment in software teams — covering real challenges like delivery pressure, different opinions, and company culture." />
+  <title>Consistency and Team Alignment in Software Teams: How to Make It Happen - Part 2 — Diogo Monte</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="../index.html" class="nav-logo">Diogo<span>.</span></a>
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#portfolio">Portfolio</a></li>
+          <li><a href="../index.html#articles" class="active">Articles</a></li>
+          <li><a href="../index.html#policies">Policies</a></li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Subpage hero -->
+  <div class="subpage-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html#articles">← Articles</a></p>
+      <h1>Consistency and Team Alignment in Software Teams: How to Make It Happen - Part 2</h1>
+      <p>Moving from theory to practice — dealing with real challenges and taking concrete steps to align your team.</p>
+    </div>
+  </div>
+
+  <!-- Article content -->
+  <main>
+    <div class="prose-container">
+
+      <div class="prose-meta">
+        <div class="tags">
+          <span class="tag">Teamwork</span>
+          <span class="tag">Process</span>
+          <span class="tag">Ways of Working</span>
+        </div>
+        <span class="date">January 2026 · 10 min read</span>
+      </div>
+
+      <article class="prose">
+
+        <p>
+          In <a href="consistency-and-team-alignment-part-1.html">Part 1</a>, I talked about what team alignment
+          means and why it matters. I shared real examples of teams where misalignment was causing pain — slow
+          onboarding, unpredictable code, and growing technical debt. I also listed seven practices that can
+          help teams get aligned.
+        </p>
+
+        <p>
+          In this part, I want to go deeper. I want to talk about how to actually implement these practices in
+          a real team — with real people, real deadlines, and a company culture that may or may not support change.
+        </p>
+
+        <h2>The Real Challenges</h2>
+
+        <p>
+          Knowing what to do is one thing. Doing it is another. When you try to introduce new practices to a
+          team, you will face resistance. That is normal and expected. Understanding where that resistance comes
+          from is the first step to dealing with it.
+        </p>
+
+        <h3>Different opinions and experience levels</h3>
+
+        <p>
+          Every engineer brings their own background to the team. A senior developer with ten years of experience
+          may have very strong opinions about how code should be structured. A junior developer might not have
+          opinions yet, but will follow whoever seems most confident. And someone in the middle might agree with
+          you in the meeting but do something different when writing code alone.
+        </p>
+
+        <p>
+          This is not a problem of bad intentions. It is a problem of different mental models. When you say
+          "write clean code," each person pictures something different based on their past experiences.
+        </p>
+
+        <p>
+          The solution is to make things explicit. Instead of agreeing on a vague principle, agree on a concrete
+          example. Show the code you want. Show the code you don't want. Document it. This removes ambiguity and
+          makes alignment possible.
+        </p>
+
+        <h3>Company culture</h3>
+
+        <p>
+          Company culture has a huge impact on how easy or hard it is to introduce new practices. Some companies
+          celebrate speed above everything else. Others value stability. Some have a culture where questioning
+          the status quo is welcomed. Others, not so much.
+        </p>
+
+        <p>
+          If your company culture does not currently support quality and alignment, you cannot ignore that. Trying
+          to impose new practices without understanding the culture is like swimming against a strong current —
+          exhausting and usually unsuccessful.
+        </p>
+
+        <p>
+          Instead, look for allies. Find the people in the team who already care about quality. Start small. Show
+          results. When others see that the new practices are actually making their lives easier, they become more
+          open to change. Culture shifts from the bottom up, one person at a time.
+        </p>
+
+        <h3>Delivery pressure</h3>
+
+        <p>
+          This is probably the most common challenge I have seen. The team is under pressure to deliver features.
+          Every sprint is full. Every quarter has deadlines. There is no time for refactoring, no time for
+          documentation, no time for knowledge-sharing sessions.
+        </p>
+
+        <p>
+          This is a trap. The less time you invest in alignment and quality, the slower the team gets over time.
+          Bugs increase. Onboarding takes longer. Code reviews become painful. Delivery slows down even more.
+          And then the team is under even more pressure to catch up.
+        </p>
+
+        <blockquote>
+          "We don't have time to improve our process" usually means "we are too busy dealing with the problems
+          that a bad process creates."
+        </blockquote>
+
+        <p>
+          The way to break this cycle is to frame improvement as a delivery strategy, not as extra work. Talk
+          to stakeholders in their language. Show that reducing bugs, improving onboarding, and making reviews
+          faster will help the team deliver more reliably. Quality is not the opposite of speed — it enables it.
+        </p>
+
+        <p>
+          It also helps to start small and timebox the effort. You don't need to fix everything at once. Pick
+          one practice, invest a few hours, and measure the impact. Small wins build trust and create space for
+          more improvement.
+        </p>
+
+        <h2>How to Put the Practices Into Action</h2>
+
+        <h3>1. Make the problem visible</h3>
+
+        <p>
+          Before you can convince anyone that there is a problem, you need to show the data. Opinions are easy
+          to dismiss. Numbers are harder to ignore.
+        </p>
+
+        <p>
+          Tools like SonarQube are great for this. SonarQube analyzes your codebase and shows you things like
+          code duplication, test coverage, security vulnerabilities, and code complexity. When you open it for
+          the first time on a codebase that has never had it, the results can be shocking — and that shock is
+          useful. It creates a shared understanding of the current state.
+        </p>
+
+        <p>
+          Set up SonarQube to run on every pull request. Make the results visible to the whole team. This is not
+          about pointing fingers. It is about making quality part of the daily conversation. When everyone can
+          see the numbers, it becomes natural to talk about improving them.
+        </p>
+
+        <p>
+          Other useful tools include linters and static analysis tools specific to your language or framework.
+          The goal is automation: let tools catch issues before a human has to in a code review. This saves time
+          and reduces friction.
+        </p>
+
+        <h3>2. Define coding conventions</h3>
+
+        <p>
+          Coding conventions cover things like naming, formatting, how to handle errors, and which design patterns
+          to use. The goal is not to make everyone write exactly the same code. The goal is to make code
+          predictable — so that when you open a file written by a colleague, it feels familiar.
+        </p>
+
+        <p>
+          The most important thing here is to define the conventions together, not alone. If you write a style
+          guide by yourself and hand it to the team, you will get pushback. If the team writes it together, they
+          will feel ownership over it and actually follow it.
+        </p>
+
+        <p>
+          Run a working session where the team reviews real examples of code from the codebase. Ask: "Is this how
+          we want things to look? What would we do differently?" This surfaces opinions, creates discussion, and
+          ends with a document that reflects the team's actual consensus.
+        </p>
+
+        <p>
+          Keep the document short and practical. A long document that nobody reads is worse than no document at
+          all. Focus on the decisions that matter most — the ones where inconsistency is currently causing the
+          most pain. And automate enforcement where possible, using formatters and linters so developers don't
+          have to remember every rule.
+        </p>
+
+        <h3>3. Agree on testing strategies</h3>
+
+        <p>
+          Testing is an area where opinions tend to be very strong. Some engineers believe in TDD and won't write
+          a line of production code without a failing test first. Others think tests should come after the
+          implementation. Some focus on unit tests, others prefer integration tests. And some write very few tests
+          at all.
+        </p>
+
+        <p>
+          None of these approaches is completely wrong — they have different trade-offs. The problem is when
+          each engineer applies a different strategy in the same codebase. You end up with parts of the system
+          that are well tested and parts that have almost no coverage. You can't confidently refactor because
+          you don't know where the safety net is.
+        </p>
+
+        <p>
+          The team needs to agree on a common strategy. This does not mean everyone must use strict TDD. But it
+          does mean agreeing on things like: What is the minimum test coverage we accept? What should we always
+          unit test? When do we write integration tests? What does a "good test" look like?
+        </p>
+
+        <p>
+          Write these answers down. Create example tests that show the agreed style — what to test, how to name
+          tests, how to structure them. When a new developer joins, they should be able to look at existing tests
+          and understand the pattern immediately.
+        </p>
+
+        <h3>4. Establish clear documentation practices</h3>
+
+        <p>
+          Documentation is often the first thing to be skipped under pressure. But missing documentation creates
+          a hidden tax that the team pays every day — in time spent asking questions, in slow onboarding, and in
+          bugs caused by misunderstanding how things work.
+        </p>
+
+        <p>
+          Start with the basics. Every service or application should have a README that answers: What does this
+          do? How do I run it locally? How do I run the tests? What are the key dependencies and configurations?
+          This sounds simple, but many codebases are missing exactly this.
+        </p>
+
+        <p>
+          Beyond the README, architecture diagrams are very valuable. They don't need to be perfect. A simple
+          diagram showing how the main components interact saves hours of explanation and confusion. Keep diagrams
+          close to the code — in the same repository — so they are easier to update.
+        </p>
+
+        <p>
+          Create an onboarding guide that helps new team members set up their environment and make their first
+          contribution. The best way to build this is to write it while onboarding someone new. Ask them to
+          document every step as they go. The result will be much more accurate than something written from memory.
+        </p>
+
+        <p>
+          The key to making documentation work is to make updating it a habit, not an afterthought. When you
+          change something, update the docs. Make it part of the definition of done for any task.
+        </p>
+
+        <h3>5. Conduct design discussions before implementing new features</h3>
+
+        <p>
+          One of the biggest sources of inconsistency is when engineers start implementing features without first
+          discussing the design. Each person makes their own decisions about structure, naming, and patterns.
+          The result is a codebase where every feature looks like it was built by a different company.
+        </p>
+
+        <p>
+          Before starting a significant piece of work, hold a short design discussion. This doesn't need to be a
+          long meeting. Even a thirty-minute conversation with two or three people can catch major issues and align
+          the team on the approach.
+        </p>
+
+        <p>
+          A useful format is a lightweight design document — sometimes called an RFC (Request for Comments) or
+          just a design doc. It doesn't have to be long. It should answer: What problem are we solving? What are
+          the options we considered? What is our chosen approach and why? What are the risks?
+        </p>
+
+        <p>
+          This creates a paper trail of decisions, which is invaluable when someone asks "why is this code like
+          this?" six months later. It also forces the engineer to think through the problem before writing code,
+          which usually results in better solutions.
+        </p>
+
+        <p>
+          Design discussions also create natural opportunities for the team to share knowledge. When a senior
+          engineer explains their thinking, junior engineers learn. When junior engineers ask questions, senior
+          engineers are challenged to justify their assumptions. Everyone grows.
+        </p>
+
+        <h3>6. Set up code review guidelines</h3>
+
+        <p>
+          Code reviews are one of the most powerful tools for spreading good practices — but only if they are
+          done well. Bad code reviews are either too shallow (approving everything quickly) or too personal
+          (focusing on style preferences rather than real issues).
+        </p>
+
+        <p>
+          Define what a good code review looks like for your team. What should reviewers check? Think about
+          correctness, test coverage, readability, adherence to conventions, and potential edge cases. Document
+          these expectations so everyone reviews with the same mindset.
+        </p>
+
+        <p>
+          Also define how to give feedback respectfully. A code review is about the code, not the person. Phrases
+          like "this could be clearer if..." work much better than "this is wrong." Some teams use a system of
+          labels — like "suggestion," "must fix," or "question" — to make the intent of each comment clear.
+        </p>
+
+        <p>
+          Set a maximum size for pull requests. Large pull requests are hard to review and often get approved
+          without a real check because reviewers feel overwhelmed. If a PR is too large, ask the author to split
+          it. Smaller, focused changes are easier to understand, review, and revert if something goes wrong.
+        </p>
+
+        <p>
+          Finally, make code reviews a priority. If reviews sit open for days, engineers lose their flow and
+          the whole team slows down. Agree on a response time — for example, reviewing within one business day.
+        </p>
+
+        <h3>7. Schedule regular knowledge-sharing sessions</h3>
+
+        <p>
+          Knowledge that lives only in one person's head is a risk. When that person leaves, changes teams, or
+          is simply unavailable, the rest of the team is stuck. Regular knowledge-sharing sessions help spread
+          understanding and reduce these single points of failure.
+        </p>
+
+        <p>
+          This can take many forms. A short weekly session where someone presents a recent learning, a tool they
+          discovered, or a technical decision they made. A monthly deep-dive into a part of the system that few
+          people understand well. A book club around a technical book the team is reading together.
+        </p>
+
+        <p>
+          The format matters less than the habit. Pick something simple and sustainable. Even a fifteen-minute
+          slot at the end of a meeting, once a week, is enough to make a difference over time.
+        </p>
+
+        <p>
+          Encourage everyone to present — not just senior engineers. When a junior developer shares something they
+          learned, two things happen. They grow in confidence, and the team often learns something new, because
+          beginners often discover things that experts take for granted.
+        </p>
+
+        <h2>Changing Culture Takes Time</h2>
+
+        <p>
+          I want to be honest: none of this happens quickly. Changing how a team works is a slow process. You
+          will introduce a practice and some people will follow it immediately, others will need reminders, and
+          a few will resist. That is normal.
+        </p>
+
+        <p>
+          The most important thing is consistency from your side. Keep showing up. Keep reviewing code the right
+          way. Keep having design discussions. Keep updating the documentation. Over time, these behaviors become
+          the norm, and people stop questioning them because they just become "how we do things here."
+        </p>
+
+        <p>
+          Celebrate small wins. When a new team member onboards quickly because the README was clear, mention
+          it. When a bug is caught in a code review because the team has good guidelines, highlight it. Making
+          the benefits visible helps people understand that the effort is worth it.
+        </p>
+
+        <p>
+          And be patient with yourself. You will not change the whole team alone, and you don't have to. If you
+          can influence the people around you and make your corner of the codebase a little better, that is
+          already meaningful progress.
+        </p>
+
+        <h2>Conclusion</h2>
+
+        <p>
+          The practices I described here are not new. Most engineers have heard of them. The hard part is not
+          knowing what to do — it is doing it consistently, in a real team, under real pressure, with people
+          who have different opinions and habits.
+        </p>
+
+        <p>
+          Start with one practice. Make the problem visible first, because data creates shared understanding.
+          Then pick the next practice that will have the most impact for your team. Build the habit before moving
+          to the next one.
+        </p>
+
+        <p>
+          The goal is not a perfect codebase or a perfect process. The goal is a team that is always improving —
+          where each sprint is a little smoother than the last, and where engineers feel confident in the work
+          they are doing together.
+        </p>
+
+        <hr />
+
+        <p>
+          <a href="consistency-and-team-alignment-part-1.html">← Read Part 1</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="../index.html#articles">Back to all articles</a>
+        </p>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Diogo Monte.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
