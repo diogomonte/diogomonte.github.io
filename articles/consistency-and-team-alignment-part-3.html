@@ -52,7 +52,7 @@
           <span class="tag">AI</span>
           <span class="tag">Ways of Working</span>
         </div>
-        <span class="date">February 2026 · 8 min read</span>
+        <span class="date">April 2026 · 8 min read</span>
       </div>
 
       <article class="prose">
@@ -70,17 +70,16 @@
         </p>
 
         <p>
-          I want to share a real story. For the past three and a half years, I have been working as a lead
-          engineer on a platform called OIPO. Over that time, I applied the practices and principles I described
-          in Parts 1 and 2 — and the transformation that followed is the clearest proof I have that this way
-          of thinking about software development actually works.
+          I want to share a real story. For the past three and a half years, I have been working as a lead engineer on a platform I currently work. 
+          Over that time, I applied the practices and principles I described in Parts 1 and 2 — 
+          and the transformation that followed is the clearest proof I have that this way of thinking about software development actually works.
         </p>
 
         <h2>Where We Started</h2>
 
         <p>
-          When I joined, the platform was what engineers quietly call spaghetti. No clear structure, no
-          engineering practices, no shared vision. Developers wrote code to solve the immediate problem in front
+          When I joined, the platform was what engineers quietly call spaghetti. No clear structure, no 
+          engineering practices, no shared vision. Developers wrote code to solve the immediate problem in front 
           of them — no design, no plan, no consideration for what comes next. Tests existed, but they were
           unmaintainable. The codebase was unmaintainable. And the architecture made things worse: an overblown
           collection of very small services with no bounded context defined, no clear ownership, and no logical
@@ -101,64 +100,43 @@
           too many questions about why things are the way they are.
         </p>
 
-        <h2>What I Did as a Lead Engineer</h2>
+        <h2>What We Changed</h2>
 
         <p>
-          As a lead engineer, my role was not just to write code. It was to shape how the team worked and how
-          the codebase evolved. The practices from Parts 1 and 2 were not abstract ideas I read about — they
-          were things I actively introduced and pushed for, day after day.
+          The transformation started with the same practices I described in Parts 1 and 2. We made the problems
+          visible. We defined clear boundaries. We had design discussions before building new features. We agreed
+          on patterns and made sure the whole team understood them.
         </p>
 
         <p>
-          I started by making problems visible. I introduced code quality tooling so the team could see the
-          current state of the codebase objectively, not just feel it. From there, I defined coding standards
-          — naming conventions, design patterns, error handling — and worked with the team to make them part
-          of how everyone wrote code, not just guidelines on a document nobody reads.
+          Over time, this discipline enabled something more structural: we moved from a tightly coupled system
+          to a modular codebase and are now moving towards a more scalable architecture.
         </p>
 
         <p>
-          I introduced design discussions before new features. Before writing a single line, we aligned on the
-          approach. I set up code review guidelines so that feedback was consistent and focused on quality, not
-          personal preference. I pushed for better documentation — not long formal documents, but the practical
-          kind: clear READMEs, architecture diagrams, and onboarding guides that actually helped new developers.
-        </p>
-
-        <p>
-          None of this happened overnight. There was resistance. There was delivery pressure. There were moments
-          where it felt easier to just move on and ship. But I kept pushing, because I could see where it was going.
-        </p>
-
-        <p>
-          Over time, this work enabled something much bigger: a redesign of core parts of the platform and a
-          move from a tightly coupled system to a modular architecture.
-        </p>
-
-        <p>
-          The most important piece was a configurable bookable-option generation engine. Instead of having product
-          logic scattered across the codebase, I led the design and development of a central engine where product
-          rules could be configured in a reusable, flexible way. A new product type no longer required rebuilding
+          The most important piece was what a configurable engine that I have developed. Instead
+          of having product logic scattered across the codebase, I built a central engine where product rules
+          could be configured in a reusable, consistent way. A new product type no longer required rebuilding
           logic from scratch. It required configuring the engine.
         </p>
 
         <p>
-          This kind of work is only possible when the team is aligned. A modular engine built on top of a messy,
-          inconsistent codebase would have become just another messy, inconsistent piece of the system. The
-          foundation had to come first.
+          This is the direct result of the practices from Parts 1 and 2. Modular architecture does not appear
+          by accident. It is the outcome of a team that communicates well, thinks about design before coding,
+          and maintains consistent patterns over time. Without that foundation, this kind of engine would have
+          been impossible to build — or it would have become just another inconsistent piece of the system.
         </p>
 
         <h2>The Measurable Impact</h2>
 
         <p>
-          OIPO now supports all ocean products. But the headline number is not the product count. The headline
-          number is delivery time.
+          Our core product now has reduced complexity and improved delivery time.
         </p>
 
         <p>
-          Features that used to take months to develop can now be delivered in days. In some cases, by a single
-          engineer. What changed? The architecture got out of the way. When the system is modular, when the
-          boundaries are clean, when the patterns are consistent — adding a new feature is a matter of knowing
-          where to plug it in. There is no archaeology. No need to trace calls across five services to understand
-          the side effects of a small change.
+          Features that used to take months to develop can now be delivered in days. 
+          The system is modular, when the boundaries are clean, when the patterns are consistent — adding a new feature is a matter of knowing
+          where to plug it in. No need to trace calls across five services to understand the side effects of a small change.
         </p>
 
         <blockquote>
@@ -166,10 +144,8 @@
         </blockquote>
 
         <p>
-          Faster delivery also means faster experiments. And faster experiments mean faster learning. When you
-          can ship a new product variation in days, you get real user feedback quickly. You learn what works and
-          what doesn't before you have committed months of work to the wrong direction. That feedback loop is
-          extremely valuable in any business, but especially in a competitive market.
+          Faster delivery also means faster experiments. And faster experiments mean faster learning. Faster feedback. 
+          That feedback loop is extremely valuable in any business, but especially in a competitive market.
         </p>
 
         <p>
@@ -181,7 +157,7 @@
         <h2>Where AI Enters the Picture</h2>
 
         <p>
-          Here is where the story becomes even more interesting. As the team adopted AI tools to assist with
+          Here is where the story becomes even more interesting. As the team has been adopting AI tools to assist with
           development, something became clear very quickly: the impact of AI depends heavily on the quality of
           the codebase and the clarity of the context you give it.
         </p>
@@ -209,14 +185,13 @@
 
         <p>
           One thing I observed after the team started using AI tools was a significant difference in how people
-          applied them. I saw estimation differences of up to 40% between team members, depending on how
-          effectively they were using AI.
+          applied them. 
         </p>
 
         <p>
-          Some developers used AI mostly as a smarter autocomplete — asking it to write boilerplate or fix
-          syntax errors. Others used it as a thinking partner — asking it to help design solutions, review logic,
-          spot edge cases, and generate tests. The second group was dramatically faster.
+          Some developers use AI mostly as a smarter autocomplete — asking it to write boilerplate or fix
+          syntax errors. Others use it as a thinking partner — asking it to help design solutions, review logic,
+          spot edge cases, and generate tests. The second group is dramatically faster.
         </p>
 
         <p>
@@ -234,28 +209,27 @@
         <h2>Architecture Decisions Compound Over Time</h2>
 
         <p>
-          Looking back at these three years, one conviction has become stronger than ever: architecture,
-          modularity, and the habits of a team compound over time.
+          Looking back at this journey, one conviction has become stronger than ever: architecture, modularity,
+          and the habits of a team compound over time.
         </p>
 
         <p>
-          The work of the first year — aligning the team, defining conventions, introducing design discussions,
-          setting coding standards — did not produce a dramatic improvement overnight. It felt slow. It was
-          sometimes frustrating, especially when facing pushback or delivery pressure. But it created a foundation.
-          And every decision built on that foundation was better than it would have been otherwise.
+          The work of the first year — aligning the team, defining conventions, introducing design discussions
+          — did not produce a dramatic improvement overnight. It felt slow. It was sometimes frustrating. But
+          it created a foundation. And every decision built on that foundation was better than it would have
+          been otherwise.
         </p>
 
         <p>
-          The modular architecture and the core engine redesign were only possible because of the alignment work
-          that came before. The speed gains came from the architectural decisions. And the AI-assisted development
-          is now producing real results because the codebase is consistent and structured enough to serve as good
-          context for AI tools.
+          The modular engine we built in year two was only possible because of the alignment work in year one.
+          The speed gains in year three were only possible because of the architectural decisions in year two.
+          And the AI-assisted development is producing real results because the codebase is clean
+          enough to serve as a good context for AI tools.
         </p>
 
         <p>
-          This is not an accident. This is what happens when a lead engineer commits to improving the codebase
-          and the team continuously — even when it is hard, even when there is delivery pressure, even when the
-          benefits are not immediately visible.
+          This is not an accident. This is what happens when a team commits to improving continuously, even
+          when it is hard, even when there is delivery pressure, even when the benefits are not immediately visible.
         </p>
 
         <h2>What This Means for Your Team</h2>
@@ -267,7 +241,7 @@
 
         <p>
           The good news is that the practices work. Consistency and alignment really do lead to faster delivery,
-          better quality, and a team that is more enjoyable to work on. The OIPO story is real proof of that.
+          better quality, and a team that is more enjoyable to work on. This story is real proof of that.
         </p>
 
         <p>
@@ -289,19 +263,14 @@
         <h2>Conclusion</h2>
 
         <p>
-          The three parts of this series tell one connected story. As a lead engineer, the most valuable thing
-          I did was not any single feature or technical decision. It was building the conditions that made good
-          decisions possible — for me and for everyone on the team.
+          The three parts of this series tell one connected story. Alignment creates consistency. Consistency
+          enables modularity. Modularity multiplies the impact of every developer on the team — and now, with AI,
+          it multiplies that impact even further.
         </p>
 
         <p>
-          Alignment creates consistency. Consistency enables modularity. Modularity multiplies the impact of
-          every developer on the team — and now, with AI, it multiplies that impact even further.
-        </p>
-
-        <p>
-          OIPO is not done. We can always improve, and now we have the foundation to do it faster than ever.
-          That is the best position a platform and a team can be in.
+          We are not done with it yet. There is a lot to learn and to improve, and now we have the foundation to do it faster than
+          ever. That is the best position a team can be in.
         </p>
 
         <p>
