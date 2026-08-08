@@ -4,19 +4,19 @@
 
 /* --- CSS Variables (Color Palette) --- */
 :root {
-  --color-primary:     #3A7CA5;
-  --color-secondary:   #F4A261;
-  --color-bg:          #F5F7FA;
+  --color-primary:     #1E3A5F;
+  --color-secondary:   #475569;
+  --color-bg:          #F8F9FA;
   --color-surface:     #FFFFFF;
-  --color-text:        #2D2D2D;
-  --color-muted:       #6C757D;
-  --color-accent:      #2A9D8F;
-  --color-highlight:   #E3F2FD;
-  --color-warm:        #8B5E3C;
+  --color-text:        #1A202C;
+  --color-muted:       #64748B;
+  --color-accent:      #2563EB;
+  --color-highlight:   #F1F5F9;
+  --color-warm:        #475569;
 
-  --radius-sm:  6px;
-  --radius-md:  12px;
-  --radius-lg:  20px;
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
 
   --shadow-sm:  0 2px 8px rgba(0,0,0,.08);
   --shadow-md:  0 4px 20px rgba(0,0,0,.12);
@@ -58,11 +58,11 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 h3 { font-size: 1.2rem; }
 
 .section-label {
-  font-size: .8rem;
+  font-size: .75rem;
   font-weight: 600;
-  letter-spacing: .12em;
+  letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-muted);
   margin-bottom: .5rem;
 }
 
@@ -115,7 +115,7 @@ section {
   color: var(--color-primary);
   letter-spacing: -.01em;
 }
-.nav-logo span { color: var(--color-secondary); }
+.nav-logo span { color: var(--color-accent); }
 
 .nav-links {
   display: flex;
@@ -160,18 +160,11 @@ section {
    HERO
    ============================================ */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #2563a8 100%);
+  background: linear-gradient(160deg, #1E3A5F 0%, #0F2340 100%);
   color: #fff;
   padding: 6rem 0 5rem;
   overflow: hidden;
   position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .hero .container {
@@ -203,7 +196,7 @@ section {
 
 .hero h1 em {
   font-style: normal;
-  color: var(--color-secondary);
+  color: #93C5FD;
 }
 
 .hero p {
@@ -245,16 +238,16 @@ section {
 }
 
 .btn-primary {
-  background: var(--color-secondary);
+  background: var(--color-accent);
   color: #fff;
-  border-color: var(--color-secondary);
+  border-color: var(--color-accent);
 }
 .btn-primary:hover {
-  background: #e8924d;
-  border-color: #e8924d;
+  background: #1D4ED8;
+  border-color: #1D4ED8;
   color: #fff;
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(244,162,97,.4);
+  box-shadow: 0 4px 14px rgba(37,99,235,.3);
 }
 
 .btn-outline {
@@ -295,13 +288,13 @@ section {
 
 .tag {
   font-size: .72rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: .04em;
-  padding: .25rem .65rem;
-  border-radius: 100px;
-  background: rgba(42,157,143,.12);
-  color: var(--color-accent);
-  border: 1px solid rgba(42,157,143,.25);
+  padding: .2rem .6rem;
+  border-radius: var(--radius-sm);
+  background: #EFF6FF;
+  color: #3B5BDB;
+  border: 1px solid #C7D7F9;
 }
 
 /* ============================================
@@ -563,7 +556,7 @@ section {
   font-size: .88rem;
   color: rgba(255,255,255,.6);
 }
-.footer-links a:hover { color: var(--color-secondary); }
+.footer-links a:hover { color: #93C5FD; }
 
 .social-links {
   display: flex;
@@ -599,7 +592,7 @@ section {
    SUBPAGE LAYOUT (articles / policies)
    ============================================ */
 .subpage-hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #2563a8 100%);
+  background: linear-gradient(160deg, #1E3A5F 0%, #0F2340 100%);
   color: #fff;
   padding: 4rem 0 3rem;
 }

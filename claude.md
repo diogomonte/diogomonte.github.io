@@ -35,9 +35,9 @@ Define these as CSS variables and use consistently:
 
 ```css
 :root {
-  --primary: #3A7CA5;
-  --secondary: #F4A261;
-  --background: #F5F7FA;
+  --primary: #1E3A5F;
+  --secondary: #475569;
+  --background: #F8F9FA;
   --surface: #FFFFFF;
   --text-primary: #2D2D2D;
   --text-muted: #6C757D;
