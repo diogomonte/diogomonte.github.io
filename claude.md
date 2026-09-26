@@ -1,47 +1,35 @@
-# Personal Portfolio Website – Claude Code Prompt
+# CLAUDE.md
 
-You are an expert web designer and GitHub Pages developer.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-Your task is to build a modern, responsive personal portfolio website using HTML, CSS, and minimal JavaScript. The site must be simple, clean, and ready to deploy on GitHub Pages.
+## Project overview
 
----
+Diogo Monte's personal portfolio site: static HTML/CSS/vanilla-JS, deployed directly via GitHub Pages (no build step, no bundler, no package.json). Every page is served as-is from the repo root.
 
-## 🎯 Purpose
+## Development
 
-This website is for a developer and should include:
+There is no build/lint/test tooling. To preview locally, just open `index.html` in a browser, or serve the directory:
 
-- A short **About Me** section
-- A **Portfolio** section (main focus)
-- An **Articles / Blog** section
-- A **Policies** section (privacy policies, app descriptions)
-- A clean **homepage** that highlights projects first
+```
+python3 -m http.server 8000
+```
 
----
+There are no automated tests. Verify changes by opening the affected page(s) in a browser and checking layout/links manually.
 
-## 🎨 Design Style
+## Architecture
 
-- Friendly, modern, slightly creative (not corporate)
-- Clean layout with good spacing
-- Card-based UI
-- Rounded corners and soft shadows
-- Smooth hover effects
-- Portfolio-first emphasis
+- `index.html` — the entire homepage as a single-page app: hero, then `#portfolio`, `#articles`, `#policies`, `#about` sections, all anchor-linked from one nav (`.nav-links`). New portfolio/article/policy entries get a summary card added directly in the matching section of `index.html`, linking out to a standalone detail page.
+- `portfolio/*.html`, `articles/*.html`, `policies/*.html` — standalone detail pages (one per project, blog post, or app privacy policy). Each is a full independent HTML document, not a template/partial — copy an existing file in the same folder as a starting point for a new one to match structure and styling classes.
+- `styles.css` — single global stylesheet shared by every page (root + subfolders all reference `../styles.css` or `styles.css` depending on depth). Design tokens (colors, radii, shadows, fonts) are CSS custom properties in `:root` at the top — reuse these vars rather than hardcoding values.
+- `scripts.js` — minimal vanilla JS included on `index.html` only, handling: mobile nav toggle, scroll-spy active-link highlighting via `IntersectionObserver`, and smooth-scroll for in-page anchor links.
+- `images/` — static image assets referenced by relative path from wherever they're used.
 
----
+## Design tokens (styles.css `:root`)
 
-## 🎨 Color Palette (USE EXACT VALUES)
+Color/spacing/shadow variables are already defined in `styles.css` (`--color-primary`, `--color-accent`, `--radius-md`, `--shadow-md`, etc.) — use these existing variables. Note the color palette in `styles.css` differs slightly from the one described later in this file's original prompt section (`--color-accent: #2563EB` vs `--accent: #2A9D8F`); treat `styles.css` as the source of truth since it's what's actually live on the site.
 
-Define these as CSS variables and use consistently:
+## Content conventions
 
-```css
-:root {
-  --primary: #1E3A5F;
-  --secondary: #475569;
-  --background: #F8F9FA;
-  --surface: #FFFFFF;
-  --text-primary: #2D2D2D;
-  --text-muted: #6C757D;
-  --accent: #2A9D8F;
-  --highlight: #E3F2FD;
-  --warm-accent: #8B5E3C;
-}
+- Cards (`.card`, `.project-card`, `.article-card`, `.policy-card`) follow a consistent `card-body` + `card-footer` structure — match this when adding entries.
+- Article cards include a `tags` list and a `date` (e.g. `Dec 2025`) in `.card-meta`.
+- Commented-out card markup in `index.html` (e.g. an unpublished article) is intentional — draft entries are left in place as HTML comments until ready to publish, not deleted.
