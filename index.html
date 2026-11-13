@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Diogo Monte — iOS & Android developer building apps people love." />
-  <title>Diogo Monte — Developer</title>
+  <meta name="description" content="Diogo Monte, software architect. Designing modular systems and exploring AI-assisted development. Based in Copenhagen." />
+  <title>Diogo Monte, software architect</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -21,16 +21,14 @@
   <header>
     <nav class="navbar" aria-label="Main navigation">
       <div class="container">
-        <!-- Logo / name -->
-        <a href="#home" class="nav-logo">Diogo<span>.</span></a>
+        <a href="#home" class="nav-logo">Diogo Monte</a>
 
-        <!-- Desktop links -->
         <ul class="nav-links" id="nav-links" role="list">
-          <li><a href="#home"      class="active">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#articles"> Articles</a></li>
-          <li><a href="#policies"> Policies</a></li>
-          <li><a href="#about">    About</a></li>
+          <li><a href="#focus">Focus</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#policies">Policies</a></li>
         </ul>
 
         <!-- Hamburger button (mobile) -->
@@ -46,264 +44,165 @@
   <main>
 
     <!-- =============================================
-         HERO SECTION
+         HERO
          ============================================= -->
     <section id="home" class="hero">
       <div class="container">
 
         <div class="hero-text">
-          <!-- <span class="hero-badge">👋 Open to new projects</span> -->
-          <h1>Hi, I'm <em>Diogo Monte</em></h1>
+          <h1>I design software systems that stay simple as they grow.</h1>
           <p>
-             Software engineer with 15+ years experience. Passionate about clean code and architecture. 
-             Exploring AI agents and sharing what I learn.
+            Software engineer with 15+ years building mobile and backend platforms, now focused on
+            architecture and AI-assisted development. Based in Copenhagen.
           </p>
           <div class="hero-actions">
-            <a href="#portfolio" class="btn btn-primary">View My Work</a>
-            <a href="#about"     class="btn btn-outline">About Me</a>
+            <a href="https://medium.com/@diogomonte" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read my writing</a>
+            <a href="#portfolio" class="btn btn-outline">See my work</a>
           </div>
         </div>
 
-        <!-- Profile picture -->
-        <div class="hero-image" aria-hidden="true">
-          <img src="images/eu.jpeg" alt="Diogo Monte" />
-        </div>
+        <figure class="hero-image">
+          <img src="images/eu.jpeg" alt="Portrait of Diogo Monte" />
+        </figure>
 
       </div>
     </section>
 
     <!-- =============================================
-         PORTFOLIO SECTION  (most important)
+         FOCUS
+         ============================================= -->
+    <section id="focus">
+      <div class="container section-grid">
+        <h2 class="section-title">Focus</h2>
+
+        <div class="focus-list">
+          <div class="focus-item">
+            <h3>Software architecture</h3>
+            <p>
+              Modular systems with clear boundaries, so teams can evolve one part without
+              breaking another. Consistent patterns that make a large codebase predictable.
+            </p>
+          </div>
+          <div class="focus-item">
+            <h3>AI-assisted development</h3>
+            <p>
+              Putting AI agents to work in real-world codebases. A clean, modular foundation
+              is what makes AI a practical tool, helping teams ship features in days instead
+              of months.
+            </p>
+          </div>
+          <div class="focus-item">
+            <h3>Design and craft</h3>
+            <p>
+              Clear, honest product design, and APIs and interfaces that are easy to understand,
+              use and maintain long after the first release.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         WORK
          ============================================= -->
     <section id="portfolio">
-      <div class="container">
-        <p class="section-label">What I've built</p>
-        <h2 class="section-title">Portfolio</h2>
-        <p class="section-subtitle">
-          A selection of apps and projects I've shipped. Tap a card to learn more.
-        </p>
+      <div class="container section-grid">
+        <h2 class="section-title">Work</h2>
 
-        <div class="portfolio-grid">
+        <ul class="project-list" role="list">
 
           <!-- Project IAgro -->
-          <article class="card project-card">
-            <div class="card-body">
-              <div class="tags">
-                <span class="tag">Android</span>
-                <span class="tag">Kotlin</span>
-                <span class="tag">Compose</span>
+          <li class="project-row">
+            <a href="portfolio/iagro.html" class="project-link">
+              <div class="project-main">
+                <h3>IAgro</h3>
+                <p class="description">
+                  A lightweight farm finance manager. Track pricing, animal-related costs and
+                  agricultural finances, fully offline with no accounts and no data collection.
+                </p>
               </div>
-              <h3>IAgro</h3>
-              <p class="description">
-                A lightweight farm finance manager for local use. Track pricing, manage animal-related costs, and monitor agricultural finances — 
-                fully offline, no accounts, no data collection.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary btn-sm">View App</a>
-              <a href="portfolio/iagro.html" class="btn btn-ghost btn-sm">Details</a>
-            </div>
-          </article>
+              <p class="project-stack">Android, Kotlin, Compose</p>
+            </a>
+          </li>
 
-        </div><!-- /.portfolio-grid -->
+        </ul>
       </div>
     </section>
 
     <!-- =============================================
-         ARTICLES SECTION
+         WRITING
          ============================================= -->
-    <section id="articles">
-      <div class="container">
-        <p class="section-label">Writing</p>
-        <h2 class="section-title">Articles</h2>
-        <p class="section-subtitle">
-          Thoughts on Software Architecture, Team Culture, mobile development, and the things I learn along the way.
-        </p>
+    <section id="writing">
+      <div class="container section-grid">
+        <h2 class="section-title">Writing</h2>
 
-        <div class="articles-grid">
-
-          <!-- Article card 1
-          <article class="card article-card">
-            <a href="articles/why-swiftui-changed-everything.html" class="card-link">
-              <div class="card-body">
-                <div class="card-meta">
-                  <div class="tags">
-                    <span class="tag">iOS</span>
-                    <span class="tag">SwiftUI</span>
-                  </div>
-                  <span class="date">Mar 2025</span>
-                </div>
-                <h3>Why SwiftUI Changed How I Think About UI Code</h3>
-                <p class="excerpt">
-                  After years of writing UIKit, switching to SwiftUI felt like going from assembly
-                  to Python. Here's what I learned in the first six months.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="read-more">Read article</span>
-              </div>
-            </a>
-          </article>-->
-
-          <!-- Article: Consistency and Team Alignment Part 1 -->
-          <article class="card article-card">
-            <a href="articles/consistency-and-team-alignment-part-1.html" class="card-link">
-              <div class="card-body">
-                <div class="card-meta">
-                  <div class="tags">
-                    <span class="tag">Teamwork</span>
-                    <span class="tag">Process</span>
-                    <span class="tag">Ways of Working</span>
-                  </div>
-                  <span class="date">Dec 2025</span>
-                </div>
-                <h3>Consistency and Team Alignment in Software Teams: Making Code Predictable and Maintainable - Part 1</h3>
-                <p class="excerpt">
-                  This post explores the advantages of adopting consistent practices and promoting team alignment,
-                  highlighting how they contribute to efficiency, collaboration, and improved code quality.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="read-more">Read article</span>
-              </div>
-            </a>
-          </article>
-
-          <!-- Article: Consistency and Team Alignment Part 2 -->
-          <article class="card article-card">
-            <a href="articles/consistency-and-team-alignment-part-2.html" class="card-link">
-              <div class="card-body">
-                <div class="card-meta">
-                  <div class="tags">
-                    <span class="tag">Teamwork</span>
-                    <span class="tag">Process</span>
-                    <span class="tag">Ways of Working</span>
-                  </div>
-                  <span class="date">Jan 2026</span>
-                </div>
-                <h3>Consistency and Team Alignment in Software Teams: How to Make It Happen - Part 2</h3>
-                <p class="excerpt">
-                  Moving from theory to practice — dealing with delivery pressure, different opinions, and company
-                  culture while implementing the practices that actually make teams work better.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="read-more">Read article</span>
-              </div>
-            </a>
-          </article>
-
-          <!-- Article: Consistency and Team Alignment Part 3 -->
-          <article class="card article-card">
-            <a href="articles/consistency-and-team-alignment-part-3.html" class="card-link">
-              <div class="card-body">
-                <div class="card-meta">
-                  <div class="tags">
-                    <span class="tag">Architecture</span>
-                    <span class="tag">AI</span>
-                    <span class="tag">Ways of Working</span>
-                  </div>
-                  <span class="date">Feb 2026</span>
-                </div>
-                <h3>Consistency and Team Alignment: From Months to Days with Modularity and AI - Part 3</h3>
-                <p class="excerpt">
-                  How five years of foundational work on a real platform led to features shipping in days instead
-                  of months — and why a clean codebase is the foundation for effective AI development.
-                </p>
-              </div>
-              <div class="card-footer">
-                <span class="read-more">Read article</span>
-              </div>
-            </a>
-          </article>
-
-        </div><!-- /.articles-grid -->
+        <div class="writing-body">
+          <p>
+            I write about software architecture, team alignment and building with AI: what
+            works in real teams, and what I learn along the way.
+          </p>
+          <a href="https://medium.com/@diogomonte" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read on Medium</a>
+        </div>
       </div>
     </section>
 
     <!-- =============================================
-         POLICIES SECTION
-         ============================================= -->
-    <section id="policies">
-      <div class="container">
-        <p class="section-label">Legal</p>
-        <h2 class="section-title">App Policies</h2>
-        <p class="section-subtitle">
-          Privacy policies and terms of service for all published apps.
-        </p>
-
-        <div class="policies-grid">
-
-          <!-- Policy card 3 -->
-          <article class="card policy-card">
-            <div class="card-body">
-              <div class="app-icon" role="img" aria-label="IAgro icon">🌾</div>
-              <h3>IAgro</h3>
-              <p class="app-desc">
-                Farm finance manager for Android. Fully offline, no accounts, no data collection.
-              </p>
-              <div class="policy-links">
-                <a href="policies/iagro-privacy.html" class="policy-link">Privacy Policy</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Policy card 4 -->
-          <article class="card policy-card">
-            <div class="card-body">
-              <div class="app-icon" role="img" aria-label="Serene icon">🧘</div>
-              <h3>Serene</h3>
-              <p class="app-desc">
-                Self-regulation app for neurodivergent minds. Fully offline, no accounts, no data collection.
-              </p>
-              <div class="policy-links">
-                <a href="policies/serene-privacy.html" class="policy-link">Privacy Policy</a>
-              </div>
-            </div>
-          </article>
-
-        </div><!-- /.policies-grid -->
-      </div>
-    </section>
-
-    <!-- =============================================
-         ABOUT SECTION
+         ABOUT
          ============================================= -->
     <section id="about">
-      <div class="container">
+      <div class="container section-grid">
+        <h2 class="section-title">About</h2>
+
         <div class="about-inner">
-
-          <!-- Photo -->
-          <div class="about-photo">
-            <img src="images/eu.jpeg" alt="Diogo Monte smiling" />
-          </div>
-
-          <!-- Text -->
           <div class="about-text">
-            <p class="section-label">A bit about me</p>
-            <h2 class="section-title">Hey, I'm Diogo 👋</h2>
-
             <p>
-              I'm a software developer based in Copenhagen, Denmark with a passion for building
-              mobile and web products that are both useful and delightful to use.
+              I'm a software engineer based in Copenhagen, Denmark. Over the past 15 years I've
+              built mobile apps and backend platforms, and spent much of that time on the
+              structure underneath them: how code is organised, how teams agree on patterns,
+              and how systems stay maintainable as they grow.
             </p>
             <p>
-              I care about clean code, honest product design, and shipping things that
-              actually work for real people.
+              Today I focus on architecture and on how AI agents change the way we build
+              software. I care about clean code, honest product design, and shipping things
+              that work for real people.
             </p>
-
-            <div class="skills" role="list" aria-label="Skills">
-              <span class="skill-badge" role="listitem">Java</span>
-              <span class="skill-badge" role="listitem">Kotlin</span>
-              <span class="skill-badge" role="listitem">Kotlin Multiplatform</span>
-              <span class="skill-badge" role="listitem">Golang</span>
-              <span class="skill-badge" role="listitem">K8s</span>
-              <span class="skill-badge" role="listitem">PostgreSQL</span>
-              <span class="skill-badge" role="listitem">Git</span>
-            </div>
           </div>
 
+          <dl class="skills" aria-label="Skills">
+            <dt>Languages</dt>
+            <dd>Kotlin, Java, Go</dd>
+            <dt>Platforms</dt>
+            <dd>Kotlin Multiplatform, Android, Kubernetes</dd>
+            <dt>Data and tools</dt>
+            <dd>PostgreSQL, Git</dd>
+          </dl>
         </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         POLICIES
+         ============================================= -->
+    <section id="policies">
+      <div class="container section-grid">
+        <h2 class="section-title">App policies</h2>
+
+        <ul class="policy-list" role="list">
+          <li class="policy-row">
+            <div>
+              <h3>IAgro</h3>
+              <p class="app-desc">Farm finance manager for Android. Offline, no accounts, no data collection.</p>
+            </div>
+            <a href="policies/iagro-privacy.html" class="policy-link">Privacy policy</a>
+          </li>
+          <li class="policy-row">
+            <div>
+              <h3>Serene</h3>
+              <p class="app-desc">Self-regulation app for neurodivergent minds. Offline, no accounts, no data collection.</p>
+            </div>
+            <a href="policies/serene-privacy.html" class="policy-link">Privacy policy</a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -315,40 +214,28 @@
   <footer class="footer" aria-label="Site footer">
     <div class="container">
       <div class="footer-inner">
-
-        <div class="footer-brand">
-          <a href="#home" class="nav-logo">Diogo<span>.</span></a>
-          <p>Building apps people love.</p>
-        </div>
-
-        <nav aria-label="Footer navigation">
-          <ul class="footer-links" role="list">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#policies">Policies</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-        </nav>
+        <p class="footer-brand">&copy; <span id="year"></span> Diogo Monte, Copenhagen</p>
 
         <div class="social-links" aria-label="Social links">
           <!-- GitHub -->
           <a href="https://github.com/diogomonte" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.75-1.33-1.75-1.08-.74.08-.72.08-.72 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.3 3.47.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
             </svg>
           </a>
           <!-- LinkedIn -->
-          <a href="https://linkedin.com/in/diogomonte" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <a href="https://www.linkedin.com/in/diogo-monte-19826a27/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.57V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/>
             </svg>
           </a>
+          <!-- Medium -->
+          <a href="https://medium.com/@diogomonte" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+            </svg>
+          </a>
         </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> Diogo Monte. Built with HTML, CSS &amp; a bit of joy.</p>
       </div>
     </div>
   </footer>
